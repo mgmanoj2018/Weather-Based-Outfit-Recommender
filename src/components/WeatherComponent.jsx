@@ -236,6 +236,7 @@ export default function WeatherComponent() {
     setSuggestions([]);
     setShowSuggestions(false);
     dispatch(fetchWeather({ lat: city.lat, lon: city.lon }));
+    setQuery("")
   };
 
   const onSubmit = (e) => {
