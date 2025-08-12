@@ -118,3 +118,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* optional: provide background/foreground tokens */
+:root {
+  --bg: theme(colors.white);
+  --fg: theme(colors.gray[900]);
+}
+.dark {
+  --bg: theme(colors.slate[900]);
+  --fg: theme(colors.slate[100]);
+}
